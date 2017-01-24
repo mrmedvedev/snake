@@ -1,0 +1,39 @@
+c:\users\admin\documents\visual studio 2012\Projects\WpfApplication9\WpfApplication9\bin\Debug\WpfApplication9.exe.config
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\WpfApplication9\WpfApplication9\bin\Debug\WpfApplication9.exe
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\WpfApplication9\WpfApplication9\bin\Debug\WpfApplication9.pdb
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\WpfApplication9\WpfApplication9\obj\Debug\WpfApplication9.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\WpfApplication9\WpfApplication9\obj\Debug\MainWindow.baml
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\WpfApplication9\WpfApplication9\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\WpfApplication9\WpfApplication9\obj\Debug\App.g.cs
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\WpfApplication9\WpfApplication9\obj\Debug\WpfApplication9_MarkupCompile.cache
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\WpfApplication9\WpfApplication9\obj\Debug\WpfApplication9.g.resources
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\WpfApplication9\WpfApplication9\obj\Debug\WpfApplication9.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\WpfApplication9\WpfApplication9\obj\Debug\WpfApplication9.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\WpfApplication9\WpfApplication9\obj\Debug\WpfApplication9.exe
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\WpfApplication9\WpfApplication9\obj\Debug\WpfApplication9.pdb
+C:\Users\admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.exe.config
+C:\Users\admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.exe
+C:\Users\admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.pdb
+C:\Users\admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.exe
+C:\Users\admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.pdb
+C:\Users\admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\MainWindow.baml
+C:\Users\admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\MainWindow.g.cs
+C:\Users\admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\App.g.cs
+C:\Users\admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9_MarkupCompile.cache
+C:\Users\admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.g.resources
+C:\Users\admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.Properties.Resources.resources
+C:\Users\admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.csproj.GenerateResource.Cache
+D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.exe.config
+D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.exe
+D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.pdb
+D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.csprojResolveAssemblyReference.cache
+D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\MainWindow.baml
+D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\MainWindow.g.cs
+D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\App.g.cs
+D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9_MarkupCompile.cache
+D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.g.resources
+D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.Properties.Resources.resources
+D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.csproj.GenerateResource.Cache
+D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.exe
+D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.pdb

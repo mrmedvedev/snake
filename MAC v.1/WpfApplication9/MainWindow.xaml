@@ -88,12 +88,14 @@
                 <Button Command="Cut" FontSize="15" Margin="-29,0,-57,0">Cut</Button>
                 <Button Command="Copy" FontSize="15" Margin="-25,0,-55,0">Copy</Button>
                 <Button Command="Paste" FontSize="15" Margin="-25,0,-55,0">Paste</Button>
-           </MenuItem>
+            </MenuItem>
             <MenuItem Header="About" Click="MenuItem_Click_1" ></MenuItem>
         </Menu>
+        <Button x:Name="button" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="231,349,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Height="268" Margin="371,-14,-391,0" TextWrapping="Wrap" Text="srIncoming.ReadToEnd()" VerticalAlignment="Top" Width="381" TextChanged="textBox_TextChanged"/>
 
     </Grid>
-    
+
 </Window>
 
     

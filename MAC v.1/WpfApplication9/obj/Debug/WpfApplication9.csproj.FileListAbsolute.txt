@@ -37,3 +37,16 @@ D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj
 D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.csproj.GenerateResource.Cache
 D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.exe
 D:\Users\Admin\Documents\Visual Studio 2012\Projects\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.pdb
+D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.exe.config
+D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.exe
+D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.pdb
+D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.csprojResolveAssemblyReference.cache
+D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\obj\Debug\MainWindow.baml
+D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\obj\Debug\MainWindow.g.cs
+D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\obj\Debug\App.g.cs
+D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9_MarkupCompile.cache
+D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.g.resources
+D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.Properties.Resources.resources
+D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.csproj.GenerateResource.Cache
+D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.exe
+D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.pdb

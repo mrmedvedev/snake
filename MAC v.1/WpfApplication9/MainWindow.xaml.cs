@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
+using System.IO;
+
 
 namespace WpfApplication8
 {
@@ -217,5 +219,41 @@ namespace WpfApplication8
             }
         }
 
+
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        
+           /* // создаем процесс cmd.exe с параметрами "ipconfig /all"
+            ProcessStartInfo psiOpt = new ProcessStartInfo(@"cmd.exe", @"/C ipconfig /all");
+            // скрываем окно запущенного процесса
+            psiOpt.WindowStyle = ProcessWindowStyle.Hidden;
+            psiOpt.RedirectStandardOutput = true;
+            psiOpt.UseShellExecute = false;
+            psiOpt.CreateNoWindow = true;
+            // запускаем процесс
+            Process procCommand = Process.Start(psiOpt);
+            // получаем ответ запущенного процесса
+            StreamReader srIncoming = procCommand.StandardOutput;
+            */
+           
+
+            private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox textBox_TextChanged = new TextBox();
+            // textBox1.Text += srIncoming.ReadToEnd();
+            textBox_TextChanged.Text = "123";
+        }
+
+        // выводим результат
+        //   Console.WriteLine(srIncoming.ReadToEnd());
+        // закрываем процесс
+        //     procCommand.WaitForExit();
+        //    Console.ReadKey();
+        //TextBlock t = srIncoming.ReadToEnd(); 
+
+        //  procCommand.WaitForExit();
+
     }
-}
+
+        
+    }

@@ -74,11 +74,10 @@ namespace WpfApplication8
                 
         private void button1_click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = "cmd";
-            p.StartInfo.Arguments = "/K ping yandex.ru -t"; /**чтобы консоль сразу не 
-         закрывалась, чтобы её закрыть - закоментируй эту строку*/
-            p.Start();
+            WpfApplication9.Ping ya = new WpfApplication9.Ping();
+
+            ya.ping("/K ping yandex.ru -t");
+
         }
 
         private void button2_click(object sender, RoutedEventArgs e)
@@ -222,37 +221,14 @@ namespace WpfApplication8
 
 
         private void button_Click(object sender, RoutedEventArgs e)
-        
-           /* // создаем процесс cmd.exe с параметрами "ipconfig /all"
-            ProcessStartInfo psiOpt = new ProcessStartInfo(@"cmd.exe", @"/C ipconfig /all");
-            // скрываем окно запущенного процесса
-            psiOpt.WindowStyle = ProcessWindowStyle.Hidden;
-            psiOpt.RedirectStandardOutput = true;
-            psiOpt.UseShellExecute = false;
-            psiOpt.CreateNoWindow = true;
-            // запускаем процесс
-            Process procCommand = Process.Start(psiOpt);
-            // получаем ответ запущенного процесса
-            StreamReader srIncoming = procCommand.StandardOutput;
-            */
-           
-
-            private void textBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            TextBox textBox_TextChanged = new TextBox();
-            // textBox1.Text += srIncoming.ReadToEnd();
-            textBox_TextChanged.Text = "123";
+
+            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+
+            pr.req("/K ping ru907w0778");
         }
 
-        // выводим результат
-        //   Console.WriteLine(srIncoming.ReadToEnd());
-        // закрываем процесс
-        //     procCommand.WaitForExit();
-        //    Console.ReadKey();
-        //TextBlock t = srIncoming.ReadToEnd(); 
-
-        //  procCommand.WaitForExit();
-
+       
     }
 
         

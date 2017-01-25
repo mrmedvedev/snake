@@ -50,3 +50,16 @@ D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.P
 D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.csproj.GenerateResource.Cache
 D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.exe
 D:\Users\Admin\Documents\git\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.pdb
+D:\Users\c706bro\Documents\snake-les7\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.exe.config
+D:\Users\c706bro\Documents\snake-les7\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.exe
+D:\Users\c706bro\Documents\snake-les7\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.pdb
+D:\Users\c706bro\Documents\snake-les7\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.csprojResolveAssemblyReference.cache
+D:\Users\c706bro\Documents\snake-les7\MAC v.1\WpfApplication9\obj\Debug\MainWindow.baml
+D:\Users\c706bro\Documents\snake-les7\MAC v.1\WpfApplication9\obj\Debug\MainWindow.g.cs
+D:\Users\c706bro\Documents\snake-les7\MAC v.1\WpfApplication9\obj\Debug\App.g.cs
+D:\Users\c706bro\Documents\snake-les7\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9_MarkupCompile.cache
+D:\Users\c706bro\Documents\snake-les7\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.g.resources
+D:\Users\c706bro\Documents\snake-les7\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.Properties.Resources.resources
+D:\Users\c706bro\Documents\snake-les7\MAC v.1\WpfApplication9\obj\Debug\WpfApplication9.csproj.GenerateResource.Cache
+D:\Users\c706bro\Documents\snake-les7\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.exe
+D:\Users\c706bro\Documents\snake-les7\MAC v.1\WpfApplication9\bin\Debug\WpfApplication9.pdb

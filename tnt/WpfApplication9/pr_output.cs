@@ -24,11 +24,12 @@ namespace WpfApplication9
         public  Pr_output(TextBox textBox)
         {
             _textBox = textBox;
+            
         }
-        public void req(string att)
+        public void req(string app, string att)
         {
             // создаем процесс cmd.exe с параметрами "ipconfig /all"
-            ProcessStartInfo psiOpt = new ProcessStartInfo(@"cmd.exe", att);
+            ProcessStartInfo psiOpt = new ProcessStartInfo(app, att);
             // скрываем окно запущенного процесса
             psiOpt.WindowStyle = ProcessWindowStyle.Hidden;
             psiOpt.RedirectStandardOutput = true;
@@ -50,7 +51,8 @@ namespace WpfApplication9
                     if (temp == null) break;
 
                     
-                    _textBox.Text += temp;
+                    _textBox.Text += temp + "\n";
+
                 }
 
             

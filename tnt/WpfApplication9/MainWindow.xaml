@@ -18,7 +18,7 @@
             </Style.Triggers>
         </Style>
     </Window.Resources>
-    <Grid Margin="0,0,-2,-2" RenderTransformOrigin="0.5,0.5" Height="513" VerticalAlignment="Top">
+    <Grid Margin="0,0,-8,-2" RenderTransformOrigin="0.5,0.5" Height="513" VerticalAlignment="Top">
         <Grid.Resources>
             <VisualBrush x:Key="LoginHint" Stretch="None" AlignmentX="Left" AlignmentY="Top" >
                 <VisualBrush.Transform>
@@ -57,7 +57,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <Grid x:Name="RestartPanel" HorizontalAlignment="Stretch" Background="CadetBlue" Grid.ColumnSpan="2" Margin="0,0,0,447" >
+        <Grid x:Name="RestartPanel" HorizontalAlignment="Stretch" Background="CadetBlue" Grid.ColumnSpan="2" Margin="0,0,10,447" >
             <Label Margin="30,30,131,10" VerticalAlignment="Center" Content="Run as Admin to use all features!"/>
             <Button Grid.Row="0" x:Name="RestartButton" Click="RestartButton_Click" HorizontalAlignment="Right" Margin="0,24,0,0" Width="86">
                 <StackPanel Orientation="Horizontal">
@@ -66,18 +66,11 @@
                 </StackPanel>
             </Button>
         </Grid>
-        <Button Content="Reboot PC" HorizontalAlignment="Left" Margin="30,264,0,0" VerticalAlignment="Top" Width="91" Click="button1_click" Grid.Column="1" Height="28"/>
-        <Button Content="Unlock User" HorizontalAlignment="Left" Margin="30,315,0,0" VerticalAlignment="Top" Width="117" Click="button2_click" Grid.Column="1" Height="27"/>
-        <Button Content="Lock PC" HorizontalAlignment="Left" Margin="30,201,0,0" VerticalAlignment="Top" Width="91" Click="button3_click" Grid.Column="1" Height="29"/>
-        <Button Content="Ip reset" x:Name="ButtonUAC" Grid.Column="1" HorizontalAlignment="Left" Margin="207,378,0,0" VerticalAlignment="Top" Width="91" Click="Button4_click" Height="29"/>
-        <Button Content="Dns" x:Name="ButtonUAC2" Grid.Column="1" HorizontalAlignment="Left" Margin="207,422,0,0" VerticalAlignment="Top" Width="91" Click="Button5_click" Height="29"/>
-        <Button Content="Info" Grid.Column="1" HorizontalAlignment="Left" Margin="207,105,0,0" VerticalAlignment="Top" Width="104" Click="Button6_click" Height="29"/>
-        <Button Content="msconfig" x:Name="ButtonUAC3" Grid.Column="1" HorizontalAlignment="Left" Margin="207,149,0,0" VerticalAlignment="Top" Width="104" Click="Button7_click" Height="29"/>
-        <Button Content="printui" Grid.Column="1" HorizontalAlignment="Left" Margin="207,193,0,0" VerticalAlignment="Top" Width="104" Click="Button8_click" Height="29"/>
-        <Button Content="Spooler" Grid.Column="1" HorizontalAlignment="Left" Margin="207,239,0,0" VerticalAlignment="Top" Width="104" Click="Button9_click" Height="29"/>
-        <Button Content="Dvmgmt" Grid.Column="1" HorizontalAlignment="Left" Margin="207,285,0,0" VerticalAlignment="Top" Width="104" Click="Button10_Click" Height="29"/>
-        <Button Content="Ping" Grid.Column="1" HorizontalAlignment="Left" Margin="30,149,0,0" VerticalAlignment="Top" Width="88" Click="ButtonP_click" Height="29"/>
-        <Menu Height="25" VerticalAlignment="Top" Margin="0,-1,0,0" Grid.ColumnSpan="2">
+        <Button Content="Reboot PC" x:Name="ButtonUAC" HorizontalAlignment="Left" Margin="30,264,0,0" VerticalAlignment="Top" Width="91" Click="RebootPC_click" Grid.Column="1" Height="28"/>
+        <Button Content="Unlock User" HorizontalAlignment="Left" Margin="30,315,0,0" VerticalAlignment="Top" Width="117" Click="UnlockUser_click" Grid.Column="1" Height="27"/>
+        <Button Content="Lock PC" HorizontalAlignment="Left" Margin="30,201,0,0" VerticalAlignment="Top" Width="91" Click="LockPC_click" Grid.Column="1" Height="29"/>
+        <Button Content="Ping" Grid.Column="1" HorizontalAlignment="Left" Margin="30,149,0,0" VerticalAlignment="Top" Width="88" Click="Ping_click" Height="29"/>
+        <Menu Height="25" VerticalAlignment="Top" Margin="0,-1,10,0" Grid.ColumnSpan="2">
             <MenuItem Header="File">
                 <Separator></Separator>
                 <Button Content="Exit" FontSize="15" Margin="-29,0,-57,0" Click="Button_Click_1" />
@@ -89,8 +82,8 @@
             </MenuItem>
             <MenuItem Header="About" Click="MenuItem_Click_1" ></MenuItem>
         </Menu>
-        <Button x:Name="button" Content="Ipconfig" Grid.Column="1" HorizontalAlignment="Left" Margin="30,380,0,0" VerticalAlignment="Top" Width="91" Click="button_Click"/>
-        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Height="447" Margin="360,66,0,0" TextWrapping="Wrap" Text="" FontFamily="Lucida Console" VerticalAlignment="Top" Width="434" />
+        <Button x:Name="button" Content="Ipconfig" Grid.Column="1" HorizontalAlignment="Left" Margin="30,380,0,0" VerticalAlignment="Top" Width="91" Click="Ipconfig_Click" Height="29"/>
+        <TextBox x:Name="textBox" Grid.Column="1" Height="447" Margin="203,66,10,0" TextWrapping="Wrap" Text="" FontFamily="Lucida Console" VerticalAlignment="Top" />
 
     </Grid>
 

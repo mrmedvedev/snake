@@ -34,7 +34,7 @@ namespace WpfApplication8
             else
             {
                 ButtonUAC.IsEnabled = false;
-                ButtonUAC2.IsEnabled = false;
+                //ButtonUAC2.IsEnabled = false;
                 
 
                 System.Drawing.Icon img = System.Drawing.SystemIcons.Shield;
@@ -72,122 +72,74 @@ namespace WpfApplication8
         }
 
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void Ipconfig_Click(object sender, RoutedEventArgs e)
         {
 
             WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
 
-            pr.req(@"/C ipconfig /all");
+            pr.req(@"cmd.exe", @"/C ipconfig /all");
         }
 
 
-        private void button1_click(object sender, RoutedEventArgs e)
-        {
-            WpfApplication9.Ping ya = new WpfApplication9.Ping();
-
-            ya.ping("/K ping yandex.ru -t");
-
-        }
-
-        private void button2_click(object sender, RoutedEventArgs e)
-        {
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = "cmd";
-            p.StartInfo.Arguments = @"/c C:\windows\system32\PsExec.exe -s -i \\ru907w1212 rundll32.exe user32.dll LockWorkStation";
-            p.Start();
-        }
-
-        private void button3_click(object sender, RoutedEventArgs e)
+        private void RebootPC_click(object sender, RoutedEventArgs e)
         {
             WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
 
-            pr.req(@"/C psexec -s -i \\ru907w0778 rundll32.exe user32.dll LockWorkStation");
+            pr.req(@"cmd.exe", string.Format(@"/k shutdown /r /t 5 /m \\{0}", waterMarkTextBox.Text));
 
-            /*System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = "cmd";
-            p.StartInfo.Arguments = "/k tracert yandex.ru";
-            p.Start();*/
         }
 
-         private void Button4_click(object sender, RoutedEventArgs e)
+        private void UnlockUser_click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = "cmd";
-            p.StartInfo.Arguments = "/k netsh int ip reset resetlog.txt";
-            p.Start();
+            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+
+            pr.req(@"cmd.exe", string.Format(@"/c NET USER {0} /ACTIVE:YES /DOMAIN", waterMarkTextBox.Text)); 
+        }
+
+        private void LockPC_click(object sender, RoutedEventArgs e)
+        {
+            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+
+            pr.req(@"d:\PsExec.exe", string.Format(@"\\{0} -s -i rundll32.exe user32.dll LockWorkStation", waterMarkTextBox.Text));
+                                    
+        }
+
+         private void Ipreset_click(object sender, RoutedEventArgs e)
+        {
+            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+
+            pr.req(@"cmd.exe", @"/k netsh int ip reset resetlog.txt");
+            
         } 
 
-        private void Button5_click(object sender, RoutedEventArgs e)
+        private void Dns_click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = "cmd";
-            p.StartInfo.Arguments = "/k ipconfig /flushdns";
-            p.Start();
+            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
 
+            pr.req(@"cmd.exe", @"/k ipconfig /flushdns");
+            
         }
 
-        private void ButtonP_click(object sender, RoutedEventArgs e)
+        private void Ping_click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = "cmd";
-            p.StartInfo.Arguments = string.Format("/k ping {0} -t", waterMarkTextBox.Text);
-            p.Start();
+            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+
+            pr.req(@"cmd.exe", string.Format("/k ping {0} ", waterMarkTextBox.Text));
+
+            
         }
 
         private void waterMarkTextBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
             {
-                System.Diagnostics.Process p = new System.Diagnostics.Process();
-                p.StartInfo.FileName = "cmd";
-                p.StartInfo.Arguments = string.Format("/k ping {0} -t", waterMarkTextBox.Text);
-                p.Start();
+                WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+
+                pr.req(@"cmd.exe", string.Format("/k ping {0} ", waterMarkTextBox.Text));
             }
         }
 
-        private void Button6_click(object sender, RoutedEventArgs e)
-        {
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = "msinfo32";
-            p.Start();
-        }
-
-        private void Button7_click(object sender, RoutedEventArgs e)
-        {
-            System.Diagnostics.Process proc = new System.Diagnostics.Process();
-            proc.StartInfo.FileName = "msconfig.exe";
-            proc.StartInfo.WorkingDirectory = @"C:/windows/system32";
-            proc.Start();
-            proc.WaitForExit();
-        }
-
-
-
-        private void Button8_click(object sender, RoutedEventArgs e)
-        {
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = "cmd";
-            p.StartInfo.Arguments = "/c printui /s /t2";
-            p.Start();
-        }
-
-        private void Button9_click(object sender, RoutedEventArgs e)
-        {
-
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = "explorer.exe";
-            p.StartInfo.Arguments = @"C:\Windows\System32\spool";
-            p.Start();
-
-        }
-
-        private void Button10_Click(object sender, RoutedEventArgs e)
-        {
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = "devmgmt.msc";
-            p.Start();
-        }
-
+        
         private void site1_TextChanged(object sender, TextChangedEventArgs e)
         {
 

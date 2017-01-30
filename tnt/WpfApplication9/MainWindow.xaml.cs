@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
 using System.IO;
-
+using System.Windows.Forms;
 
 namespace WpfApplication8
 {
@@ -23,54 +23,7 @@ namespace WpfApplication8
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-
-            if (IsAdmin())
-            {
-                RestartPanel.Visibility = System.Windows.Visibility.Collapsed;
-            }
-            else
-            {
-                ButtonUAC.IsEnabled = false;
-                //ButtonUAC2.IsEnabled = false;
-                
-
-                System.Drawing.Icon img = System.Drawing.SystemIcons.Shield;
-
-                System.Drawing.Bitmap bitmap = img.ToBitmap();
-                IntPtr hBitmap = bitmap.GetHbitmap();
-
-                ImageSource wpfBitmap =
-                     System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(
-                          hBitmap, IntPtr.Zero, Int32Rect.Empty,
-                          BitmapSizeOptions.FromEmptyOptions());
-
-                RestartButtonIcon.Source = wpfBitmap;
-                RestartButtonIcon.Height = 20;
-                
-            }
-
-            // Analyzing arguments
-            string[] args = Environment.GetCommandLineArgs();
-            if (args.Count() > 1)
-            {
-                this.Left = Int32.Parse(args[2]);
-                this.Top = Int32.Parse(args[3]);
-                this.Width = Int32.Parse(args[4]);
-                this.Height = Int32.Parse(args[5]);
-            }
-        }
-
-        public static bool IsAdmin()
-        {
-            System.Security.Principal.WindowsIdentity id = System.Security.Principal.WindowsIdentity.GetCurrent();
-            System.Security.Principal.WindowsPrincipal p = new System.Security.Principal.WindowsPrincipal(id);
-
-            return p.IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator);
-        }
-
+       
 
         private void Ipconfig_Click(object sender, RoutedEventArgs e)
         {
@@ -125,69 +78,55 @@ namespace WpfApplication8
             WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
 
             pr.req(@"cmd.exe", string.Format("/k ping {0} ", waterMarkTextBox.Text));
-
             
         }
-
-        private void waterMarkTextBox_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.Enter)
-            {
-                WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
-
-                pr.req(@"cmd.exe", string.Format("/k ping {0} ", waterMarkTextBox.Text));
-            }
-        }
-
+                       
         
-        private void site1_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
-        {
-            System.Windows.MessageBox.Show("TNT");
-        }
-
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            this.Close();
         }
 
-
-        private void RestartButton_Click(object sender, RoutedEventArgs e)
+        private void andrey_Click(object sender, RoutedEventArgs e)
         {
-            RestartAsAdmin();
+            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+
+            pr.req(@"cmd.exe", @"/c ID  /ACTIVE:YES /DOMAIN");
         }
 
-        private void RestartAsAdmin()
+        private void chb_shure_Checked(object sender, RoutedEventArgs e)
         {
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.UseShellExecute = true;
-            startInfo.WorkingDirectory = Environment.CurrentDirectory;
-            startInfo.FileName = System.Windows.Forms.Application.ExecutablePath;
-            startInfo.Arguments = "restart " + this.Left + " "
-                + this.Top + " " + this.Width + " " + this.Height;
+            
+                btn_RebootPC.IsEnabled = true;
+    }
 
-            startInfo.Verb = "runas";
-            try
-            {
-                Process p = Process.Start(startInfo);
-                this.Close();
-            }
-            catch (Exception ex)
-            {
-                // UAC elevation failed
-            }
+        private void btn_About_click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.MessageBox.Show("Текст сообщения", "Заголовок сообщения");
         }
 
+        private void btn_Random_Click(object sender, RoutedEventArgs e)
+        {
 
+            var rnd = new Random();
+            var n = rnd.Next(0000, 9999);
 
+            waterMarkTextBox.Text = "ru907w" + n;
+
+        }
+
+        private void btn_Game_Click(object sender, RoutedEventArgs e)
+        {
+            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+
+            pr.req(@"D:\Turtle\Game.exe","");
+
+        }
+    }
+
+   
         
-
-       
     }
 
         
-    }
+    

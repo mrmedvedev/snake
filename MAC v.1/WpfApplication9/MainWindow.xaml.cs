@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
 using System.IO;
-
+using System.Windows.Forms;
 
 namespace WpfApplication8
 {
@@ -183,12 +183,21 @@ namespace WpfApplication8
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-            System.Windows.MessageBox.Show("Main Administration Console \nVersion 1.0\nMade by Mikhail Medvedev  \n2015 Justatec Corp. \nAll rights reserved.", "About");
+            DialogResult dialogResult = System.Windows.Forms.MessageBox.Show("Sure", "Some Title", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                //do something
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something else
+            }
+            // System.Windows.MessageBox.Show("Main Administration Console \nVersion 1.0\nMade by Mikhail Medvedev  \n2015 Justatec Corp. \nAll rights reserved.", "About");
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            this.Close();
         }
 
 

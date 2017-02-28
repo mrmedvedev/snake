@@ -14,21 +14,32 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
 using System.IO;
-using System.Windows.Forms;
+using System.Threading;
 
-namespace WpfApplication8
+namespace TNT
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-       
+        
+
+
+        private void Form1_Shown(Object sender, EventArgs e)
+        {
+
+            var rnd = new Random();
+            var n = rnd.Next(1000, 3000);
+
+            waterMarkTextBox.Text = "ru907w" + n;
+
+        }
 
         private void Ipconfig_Click(object sender, RoutedEventArgs e)
         {
 
-            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+            Pr_output pr = new Pr_output(textBox);
 
             pr.req(@"cmd.exe", @"/C ipconfig /all");
         }
@@ -36,7 +47,7 @@ namespace WpfApplication8
 
         private void RebootPC_click(object sender, RoutedEventArgs e)
         {
-            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+            Pr_output pr = new Pr_output(textBox);
 
             pr.req(@"cmd.exe", string.Format(@"/k shutdown /r /t 5 /m \\{0}", waterMarkTextBox.Text));
 
@@ -44,44 +55,45 @@ namespace WpfApplication8
 
         private void UnlockUser_click(object sender, RoutedEventArgs e)
         {
-            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+            Pr_output pr = new Pr_output(textBox);
 
-            pr.req(@"cmd.exe", string.Format(@"/c NET USER {0} /ACTIVE:YES /DOMAIN", waterMarkTextBox.Text)); 
+            pr.req(@"cmd.exe", string.Format(@"/c NET USER {0} /ACTIVE:YES /DOMAIN", waterMarkTextBox.Text));
         }
 
         private void LockPC_click(object sender, RoutedEventArgs e)
         {
-            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+            Pr_output pr = new Pr_output(textBox);
 
             pr.req(@"d:\PsExec.exe", string.Format(@"\\{0} -s -i rundll32.exe user32.dll LockWorkStation", waterMarkTextBox.Text));
-                                    
+
         }
 
-         private void Ipreset_click(object sender, RoutedEventArgs e)
+        private void Ipreset_click(object sender, RoutedEventArgs e)
         {
-            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+            Pr_output pr = new Pr_output(textBox);
 
             pr.req(@"cmd.exe", @"/k netsh int ip reset resetlog.txt");
-            
-        } 
+
+        }
 
         private void Dns_click(object sender, RoutedEventArgs e)
         {
-            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+            Pr_output pr = new Pr_output(textBox);
 
             pr.req(@"cmd.exe", @"/k ipconfig /flushdns");
-            
+
         }
 
         private void Ping_click(object sender, RoutedEventArgs e)
         {
-            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
-
-            pr.req(@"cmd.exe", string.Format("/k ping {0} ", waterMarkTextBox.Text));
             
+            Pr_output pr = new Pr_output(textBox);
+            
+            pr.req(@"cmd.exe", string.Format("/k ping {0} ", waterMarkTextBox.Text));
+
         }
-                       
-        
+
+
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -89,16 +101,21 @@ namespace WpfApplication8
 
         private void andrey_Click(object sender, RoutedEventArgs e)
         {
-            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+            //andrey.Background = Brushes.Green;
+            Pr_output pr = new Pr_output(textBox);
 
-            pr.req(@"cmd.exe", @"/c ID  /ACTIVE:YES /DOMAIN");
+            pr.req(@"cmd.exe", @"/c NET USER Q583EYJ /ACTIVE:YES /DOMAIN");
         }
 
         private void chb_shure_Checked(object sender, RoutedEventArgs e)
         {
-            
-                btn_RebootPC.IsEnabled = true;
-    }
+            btn_RebootPC.IsEnabled = true;
+        }
+        private void chb_shure_Unchecked_1(object sender, RoutedEventArgs e)
+        {
+            btn_RebootPC.IsEnabled = false;
+        }
+
 
         private void btn_About_click(object sender, RoutedEventArgs e)
         {
@@ -109,7 +126,7 @@ namespace WpfApplication8
         {
 
             var rnd = new Random();
-            var n = rnd.Next(0000, 9999);
+            var n = rnd.Next(1000, 3000);
 
             waterMarkTextBox.Text = "ru907w" + n;
 
@@ -117,16 +134,39 @@ namespace WpfApplication8
 
         private void btn_Game_Click(object sender, RoutedEventArgs e)
         {
-            WpfApplication9.Pr_output pr = new WpfApplication9.Pr_output(textBox);
+            Pr_output pr = new Pr_output(textBox);
 
-            pr.req(@"D:\Turtle\Game.exe","");
+            pr.req(@"D:\Turtle\Game.exe", "");
 
         }
-    }
 
-   
-        
-    }
+        private void btn_IdInfo_Click(object sender, RoutedEventArgs e)
+        {
+            
+            Pr_output pr = new Pr_output();
+            var result = pr.Andrey();
+            
+        }
 
-        
-    
+        private void Window_Activated(object sender, EventArgs e)
+        {
+            //Pr_output pr = new Pr_output();
+
+            //if (pr.Andrey()) andrey.Background = Brushes.Green;
+
+            //else andrey.Background = Brushes.Red;
+
+            
+        }
+
+
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using System.Windows.Threading;
+using Winforms = System.Windows.Forms;
+
+namespace Unlocker
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            ni.Icon = new System.Drawing.Icon("blur.ico");
+            menu = getMenu();
+        }
+        public class Output
+        {
+            public Output()
+            {
+
+            }
+
+            public void req()
+            {
+
+                ProcessStartInfo p = new ProcessStartInfo(@"cmd.exe", @"/c NET USER admin");
+                //p.WindowStyle = ProcessWindowStyle.Hidden;
+                //p.RedirectStandardOutput = true;
+                //p.UseShellExecute = false;
+                //p.CreateNoWindow = true;
+                Process procCommand = Process.Start(p);
+
+            }
+            
+        }
+
+
+
+        private void Main_Activated(object sender, EventArgs e)
+        {
+            System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();
+
+            timer.Tick += new EventHandler(timerTick);
+            timer.Interval = new TimeSpan(0, 0, 30);
+            timer.Start();
+        }
+
+            public static void timerTick(object obj, EventArgs e)
+        {
+            Output a = new Output();
+            ThreadStart req = new ThreadStart(a.req);
+            Thread thread = new Thread(a.req);
+            thread.Start();
+            
+
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
+            ni.Visible = true;
+            ni.DoubleClick += (sndr, args) =>
+            {
+                this.Show();
+                this.WindowState = WindowState.Normal;
+            };
+            ni.Click += (sndr, args) =>
+            {
+                if ((args as Winforms.MouseEventArgs).Button == Winforms.MouseButtons.Right)
+                    menu.IsOpen = true;
+            };
+
+            this.Hide();
+        }
+
+        
+
+    }
+    }
+

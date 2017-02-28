@@ -25,6 +25,7 @@ namespace WpfApplication9
         {
             _textBox = textBox;
             
+
         }
         public void req(string app, string att)
         {
@@ -50,14 +51,15 @@ namespace WpfApplication9
                     // Если достигнут конец файла, прерываем считывание.
                     if (temp == null) break;
 
-                    
+                    _textBox.AppendText(temp);
                     _textBox.Text += temp + "\n";
+                    
 
                 }
 
             
             // закрываем процесс
-            procCommand.WaitForExit();
+            //procCommand.WaitForExit();
         }
     }
 }

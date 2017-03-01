@@ -16,7 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
-using Winforms = System.Windows.Forms;
+
 
 namespace Unlocker
 {
@@ -25,11 +25,12 @@ namespace Unlocker
     /// </summary>
     public partial class MainWindow : Window
     {
+        private bool thread_stop;
+
         public MainWindow()
         {
             InitializeComponent();
-            ni.Icon = new System.Drawing.Icon("blur.ico");
-            menu = getMenu();
+
         }
         public class Output
         {
@@ -49,7 +50,7 @@ namespace Unlocker
                 Process procCommand = Process.Start(p);
 
             }
-            
+
         }
 
 
@@ -63,36 +64,107 @@ namespace Unlocker
             timer.Start();
         }
 
-            public static void timerTick(object obj, EventArgs e)
+        public static void timerTick(object obj, EventArgs e)
         {
             Output a = new Output();
             ThreadStart req = new ThreadStart(a.req);
             Thread thread = new Thread(a.req);
             thread.Start();
-            
+
 
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void Ping_Click(object sender, RoutedEventArgs e)
         {
 
-            ni.Visible = true;
-            ni.DoubleClick += (sndr, args) =>
-            {
-                this.Show();
-                this.WindowState = WindowState.Normal;
-            };
-            ni.Click += (sndr, args) =>
-            {
-                if ((args as Winforms.MouseEventArgs).Button == Winforms.MouseButtons.Right)
-                    menu.IsOpen = true;
-            };
+            
+                Output2 a = new Output2(output);
+            //while (!thread_stop)
+            //{
+                ParameterizedThreadStart req = new ParameterizedThreadStart(a.req2);
+                Thread thread = new Thread(a.req2);
+                thread.Start(string.Format(@"/c ping {0} -t", waterMarkTextBox.Text));
 
-            this.Hide();
+            //}
         }
 
-        
+        private void stop_Click(object sender, RoutedEventArgs e)
+        {
+            thread_stop = true;
+        }
 
-    }
-    }
+
+        class Output2
+        {
+
+            public Output2()
+            {
+
+            }
+
+            TextBox _output;
+            public Output2(TextBox output)
+            {
+                _output = output;
+            }
+
+
+
+
+            public void req2(object att)
+            {
+                
+                    ProcessStartInfo psiOpt = new ProcessStartInfo(@"cmd.exe", att.ToString());
+                    //скрываем окно запущенного процесса
+
+                    psiOpt.WindowStyle = ProcessWindowStyle.Hidden;
+                    psiOpt.RedirectStandardOutput = true;
+                    psiOpt.UseShellExecute = false;
+                    psiOpt.CreateNoWindow = true;
+                    psiOpt.StandardOutputEncoding = Encoding.GetEncoding(866);
+
+                    Process procCommand = Process.Start(psiOpt);
+
+                    // получаем ответ запущенного процесса
+
+                    using (StreamReader srIncoming = procCommand.StandardOutput)
+                        // выводим результат
+
+                        while (true)
+                        {
+                            // Читаем строку из файла во временную переменную.
+                            string temp = srIncoming.ReadLine();
+
+                            // Если достигнут конец файла, прерываем считывание.
+                            if (temp == null) break;
+
+
+
+                            {
+
+                                Application.Current.Dispatcher.Invoke(new Action(() =>
+                                {
+                                    _output.Text += temp + "\n";
+                                }));
+                            }
+
+                            
+                            //procCommand.WaitForExit();
+
+                        }
+
+                }
+
+            }
+
+
+        }
+
+
+
+
+    } 
+    
+    
+    
 

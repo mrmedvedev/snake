@@ -25,7 +25,7 @@ namespace Unlocker
     /// </summary>
     public partial class MainWindow : Window
     {
-        private bool thread_stop;
+        Thread thread;
 
         public MainWindow()
         {
@@ -90,7 +90,7 @@ namespace Unlocker
 
         private void stop_Click(object sender, RoutedEventArgs e)
         {
-            thread_stop = true;
+            
         }
 
 

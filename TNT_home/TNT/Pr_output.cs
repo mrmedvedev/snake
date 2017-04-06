@@ -26,50 +26,40 @@ namespace TNT
 
         }
 
-        TextBox _output;
-
-        public Pr_output(TextBox output)
+        TextBox _textBox;
+        public Pr_output(TextBox textBox)
         {
-            _output = output;
+            _textBox = textBox;
+
         }
-
-
-        //public object Dispatcher { get; private set; }
-
-
-        public void cmd(object att)
+        public void req(string app, string att)
         {
-            //var user = "su";
-            //var password = "Chewb@cc@2016";
-            //var domain = "ru907";
-            //var securePass = new SecureString();
-            //foreach (char c in password)
-            //{
-            //    securePass.AppendChar(c);
-            //}
+            var user = "su";
+            var password = "Chewb@cc@2016";
+            var domain = "ru907";
+            var securePass = new SecureString();
+            foreach (char c in password)
+            {
+                securePass.AppendChar(c);
+            }
 
-            // создаем процесс cmd.exe
-            ProcessStartInfo psiOpt = new ProcessStartInfo(@"cmd.exe", att.ToString());
-            //скрываем окно запущенного процесса
-
+            // создаем процесс cmd.exe с параметрами "ipconfig /all"
+            ProcessStartInfo psiOpt = new ProcessStartInfo(app, att);
+            // скрываем окно запущенного процесса
             psiOpt.WindowStyle = ProcessWindowStyle.Hidden;
             psiOpt.RedirectStandardOutput = true;
             psiOpt.UseShellExecute = false;
-            psiOpt.CreateNoWindow = true;
-            psiOpt.StandardOutputEncoding = Encoding.GetEncoding(866);
-
-            // запускаем процесс
             //psiOpt.UserName = user;
             //psiOpt.Password = securePass;
             //psiOpt.Domain = domain;
+            psiOpt.CreateNoWindow = true;
+            psiOpt.StandardOutputEncoding = Encoding.GetEncoding(866);
+            // запускаем процесс
             Process procCommand = Process.Start(psiOpt);
-
-
             // получаем ответ запущенного процесса
 
             using (StreamReader srIncoming = procCommand.StandardOutput)
                 // выводим результат
-
                 while (true)
                 {
                     // Читаем строку из файла во временную переменную.
@@ -79,26 +69,34 @@ namespace TNT
                     if (temp == null) break;
 
 
-                    Application.Current.Dispatcher.Invoke(new Action(() =>
-                    {
-                        _output.Text += temp + "\n";
-                    }));
-
+                    _textBox.Text += temp + "\n";
 
                 }
 
 
             // закрываем процесс
-            //procCommand.WaitForExit();
+            procCommand.WaitForExit();
         }
+
+        
+
+
 
         public bool Andrey()
         {
             string resultText = "";
-
+            
 
             bool result = false;
 
+            var user = "su";
+            var password = "Chewb@cc@2016";
+            var domain = "ru907";
+            var securePass = new SecureString();
+            foreach (char c in password)
+            {
+                securePass.AppendChar(c);
+            }
 
             //создаем процесс cmd.exe с параметрами "ipconfig /all"
             ProcessStartInfo psiOpt = new ProcessStartInfo(@"cmd.exe", @"/c NET USER Q583EYJ /DOMAIN ");
@@ -106,13 +104,13 @@ namespace TNT
             psiOpt.WindowStyle = ProcessWindowStyle.Hidden;
             psiOpt.RedirectStandardOutput = true;
             psiOpt.UseShellExecute = false;
+            psiOpt.UserName = user;
+            psiOpt.Password = securePass;
+            psiOpt.Domain = domain;
             psiOpt.CreateNoWindow = true;
-
-
             psiOpt.StandardOutputEncoding = Encoding.GetEncoding(866);
             // запускаем процесс
             Process procCommand = Process.Start(psiOpt);
-
             // получаем ответ запущенного процесса
 
             using (StreamReader srIncoming = procCommand.StandardOutput)
@@ -135,50 +133,7 @@ namespace TNT
             else result = false;
 
             return result;
-
-        }
-
-        public void psexec(object att)
-        {
-
-            // создаем процесс 
-            ProcessStartInfo psiOpt = new ProcessStartInfo(@"d:\PsExec.exe", att.ToString());
-            //скрываем окно запущенного процесса
-
-            psiOpt.WindowStyle = ProcessWindowStyle.Hidden;
-            psiOpt.RedirectStandardOutput = true;
-            psiOpt.UseShellExecute = false;
-            psiOpt.CreateNoWindow = true;
-            psiOpt.StandardOutputEncoding = Encoding.GetEncoding(866);
-
-            // запускаем процесс
-            Process procCommand = Process.Start(psiOpt);
-
-
-            // получаем ответ запущенного процесса
-
-            using (StreamReader srIncoming = procCommand.StandardOutput)
-                // выводим результат
-
-                while (true)
-                {
-                    // Читаем строку из файла во временную переменную.
-                    string temp = srIncoming.ReadLine();
-
-                    // Если достигнут конец файла, прерываем считывание.
-                    if (temp == null) break;
-
-
-                    Application.Current.Dispatcher.Invoke(new Action(() =>
-                    {
-                        _output.Text += temp + "\n";
-                    }));
-
-
-                }
-
-
-
+            
         }
     }
 }

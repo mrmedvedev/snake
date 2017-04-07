@@ -57,17 +57,20 @@ namespace WpfApplication3
         }
 
         public void Count2(object obj, EventArgs e)
+
+
+
         {
-            Job server1 = new Job();
+            Job server2 = new Job();
 
             if
 
 
-                (server1.req(Server_name1.Text))
+                (server2.req(Server_name2.Text))
             {
                 this.Dispatcher.Invoke((Action)(() =>
                 {
-                    Server_status1.Background = Brushes.Green;
+                    Server_status2.Background = Brushes.Green;
                 }));
             }
 
@@ -77,13 +80,43 @@ namespace WpfApplication3
             {
                 this.Dispatcher.Invoke((Action)(() =>
                 {
-                    Server_status1.Background = Brushes.Red;
+                    Server_status2.Background = Brushes.Red;
                 }));
             }
 
 
         }
 
+        public void Count3(object obj, EventArgs e)
+
+
+
+        {
+            Job server3 = new Job();
+
+            if
+
+
+                (server3.req(Server_name3.Text))
+            {
+                this.Dispatcher.Invoke((Action)(() =>
+                {
+                    Server_status3.Background = Brushes.Green;
+                }));
+            }
+
+
+            else
+
+            {
+                this.Dispatcher.Invoke((Action)(() =>
+                {
+                    Server_status3.Background = Brushes.Red;
+                }));
+            }
+
+
+        }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -92,6 +125,19 @@ namespace WpfApplication3
             timer.Tick += new EventHandler(Count);
             timer.Interval = new TimeSpan(0, 0, 3);
             timer.Start();
+
+            System.Windows.Threading.DispatcherTimer timer2 = new System.Windows.Threading.DispatcherTimer();
+
+            timer2.Tick += new EventHandler(Count2);
+            timer2.Interval = new TimeSpan(0, 0, 3);
+            timer2.Start();
+
+            System.Windows.Threading.DispatcherTimer timer3 = new System.Windows.Threading.DispatcherTimer();
+
+            timer2.Tick += new EventHandler(Count3);
+            timer2.Interval = new TimeSpan(0, 0, 3);
+            timer2.Start();
+
 
         }
 

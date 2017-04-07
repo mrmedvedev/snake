@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -27,36 +28,74 @@ namespace WpfApplication3
             InitializeComponent();
         }
 
+        public void Count(object obj, EventArgs e)
+        {
+            Job server1 = new Job();
+
+            if
+
+
+                (server1.req(Server_name1.Text))
+            {
+                this.Dispatcher.Invoke((Action)(() =>
+                {
+                    Server_status1.Background = Brushes.Green;
+                }));
+            }
+
+
+            else
+
+            {
+                this.Dispatcher.Invoke((Action)(() =>
+                {
+                    Server_status1.Background = Brushes.Red;
+                }));
+            }
+
+
+        }
+
+        public void Count2(object obj, EventArgs e)
+        {
+            Job server1 = new Job();
+
+            if
+
+
+                (server1.req(Server_name1.Text))
+            {
+                this.Dispatcher.Invoke((Action)(() =>
+                {
+                    Server_status1.Background = Brushes.Green;
+                }));
+            }
+
+
+            else
+
+            {
+                this.Dispatcher.Invoke((Action)(() =>
+                {
+                    Server_status1.Background = Brushes.Red;
+                }));
+            }
+
+
+        }
+
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();
 
-            Ping ping = new Ping();
-            PingReply reply;
-            try
-            {
-                reply = ping.Send(Server_name1.Text);
-                if (reply.Status != IPStatus.Success) Server_status1.Background = Brushes.Red;
-                else Server_status1.Background = Brushes.Green;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
+            timer.Tick += new EventHandler(Count);
+            timer.Interval = new TimeSpan(0, 0, 3);
+            timer.Start();
 
-            //    Job server1 = new Job();
-            //    if 
-            //        (server1.CheckConnection("yandex.ru"))
-            //    {
-            //        this.Dispatcher.Invoke((Action)(() =>
-            //        {
-            //            Server_status1.Background = Brushes.Green;
-            //        }));
-            //    }
-            //}
         }
 
         
-    }
+}
 }
 

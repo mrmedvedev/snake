@@ -25,8 +25,8 @@
             
 
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="Server_name1" Grid.Row="0" Grid.Column="0" TextAlignment="Center" >yandex.ru</TextBox>
-        <TextBox x:Name="Server_name2" Grid.Row="1" Grid.Column="0" TextAlignment="Center" >Server№2</TextBox>
+        <TextBox x:Name="Server_name1" Grid.Row="0" Grid.Column="0" TextAlignment="Center" >ru907w1212</TextBox>
+        <TextBox x:Name="Server_name2" Grid.Row="1" Grid.Column="0" TextAlignment="Center" >ru907w1313</TextBox>
         <TextBox x:Name="Server_name3" Grid.Row="2" Grid.Column="0" TextAlignment="Center" >Server№3</TextBox>
         <TextBox x:Name="Server_name4" Grid.Row="3" Grid.Column="0" TextAlignment="Center" >Server№4</TextBox>
         <TextBox x:Name="Server_name5" Grid.Row="4" Grid.Column="0" TextAlignment="Center" >Server№5</TextBox>

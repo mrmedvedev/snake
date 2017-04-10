@@ -26,117 +26,129 @@ namespace WpfApplication3
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
-        public void Count(object obj, EventArgs e)
-        {
-            Job server1 = new Job();
+        //public void Count(object obj, TextBox server_name,TextBox server_status, EventArgs e)
+        //{
+        //    Job server1 = new Job();
 
-            if
-
-
-                (server1.req(Server_name1.Text))
-            {
-                this.Dispatcher.Invoke((Action)(() =>
-                {
-                    Server_status1.Background = Brushes.Green;
-                }));
-            }
+        //    if
 
 
-            else
-
-            {
-                this.Dispatcher.Invoke((Action)(() =>
-                {
-                    Server_status1.Background = Brushes.Red;
-                }));
-            }
-
-
-        }
-
-        public void Count2(object obj, EventArgs e)
+        //        (server1.req(server_name.Text))
+        //    {
+        //        Dispatcher.Invoke((Action)(() =>
+        //        {
+        //            server_status.Background = Brushes.Green;
+        //        }));
+        //    }
 
 
+        //    else
 
-        {
-            Job server2 = new Job();
-
-            if
-
-
-                (server2.req(Server_name2.Text))
-            {
-                this.Dispatcher.Invoke((Action)(() =>
-                {
-                    Server_status2.Background = Brushes.Green;
-                }));
-            }
+        //    {
+        //        this.Dispatcher.Invoke((Action)(() =>
+        //        {
+        //            server_status.Background = Brushes.Red;
+        //        }));
+        //    }
 
 
-            else
+        //}
 
-            {
-                this.Dispatcher.Invoke((Action)(() =>
-                {
-                    Server_status2.Background = Brushes.Red;
-                }));
-            }
-
-
-        }
-
-        public void Count3(object obj, EventArgs e)
+        //public void Count2(object obj, EventArgs e)
 
 
 
-        {
-            Job server3 = new Job();
+        //{
+        //    Job server2 = new Job();
 
-            if
-
-
-                (server3.req(Server_name3.Text))
-            {
-                this.Dispatcher.Invoke((Action)(() =>
-                {
-                    Server_status3.Background = Brushes.Green;
-                }));
-            }
+        //    if
 
 
-            else
+        //        (server2.req(Server_name2.Text))
+        //    {
+        //        this.Dispatcher.Invoke((Action)(() =>
+        //        {
+        //            Server_status2.Background = Brushes.Green;
+        //        }));
+        //    }
 
-            {
-                this.Dispatcher.Invoke((Action)(() =>
-                {
-                    Server_status3.Background = Brushes.Red;
-                }));
-            }
+
+        //    else
+
+        //    {
+        //        this.Dispatcher.Invoke((Action)(() =>
+        //        {
+        //            Server_status2.Background = Brushes.Red;
+        //        }));
+        //    }
 
 
-        }
+        //}
+
+        //public void Count3(object obj, EventArgs e)
+
+
+
+        //{
+        //    Job server3 = new Job();
+
+        //    if
+
+
+        //        (server3.req(Server_name3.Text))
+        //    {
+        //        this.Dispatcher.Invoke((Action)(() =>
+        //        {
+        //            Server_status3.Background = Brushes.Green;
+        //        }));
+        //    }
+
+
+        //    else
+
+        //    {
+        //        this.Dispatcher.Invoke((Action)(() =>
+        //        {
+        //            Server_status3.Background = Brushes.Red;
+        //        }));
+        //    }
+
+
+        //}
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();
+            Count c = new Count(Server_name1, Server_status1);
+            Count c2 = new Count(Server_name2, Server_status2);
+            Count c3 = new Count(Server_name3, Server_status3);
+            Count c4 = new Count(Server_name4, Server_status4);
+            Count c5 = new Count(Server_name5, Server_status5);
+            Count c6 = new Count(Server_name6, Server_status6);
+            Count c7 = new Count(Server_name7, Server_status7);
+            Count c8 = new Count(Server_name8, Server_status8);
+            Count c9 = new Count(Server_name9, Server_status9);
+            Count c10 = new Count(Server_name10, Server_status10);
 
-            timer.Tick += new EventHandler(Count);
-            timer.Interval = new TimeSpan(0, 0, 3);
-            timer.Start();
+            //System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();
 
-            System.Windows.Threading.DispatcherTimer timer2 = new System.Windows.Threading.DispatcherTimer();
+            //timer.Tick += new EventHandler(Count);
+            //timer.Interval = new TimeSpan(0, 0, 3);
+            //timer.Start();
 
-            timer2.Tick += new EventHandler(Count2);
-            timer2.Interval = new TimeSpan(0, 0, 3);
-            timer2.Start();
+            //System.Windows.Threading.DispatcherTimer timer2 = new System.Windows.Threading.DispatcherTimer();
 
-            System.Windows.Threading.DispatcherTimer timer3 = new System.Windows.Threading.DispatcherTimer();
+            //timer2.Tick += new EventHandler(Count2);
+            //timer2.Interval = new TimeSpan(0, 0, 3);
+            //timer2.Start();
 
-            timer2.Tick += new EventHandler(Count3);
-            timer2.Interval = new TimeSpan(0, 0, 3);
-            timer2.Start();
+            //System.Windows.Threading.DispatcherTimer timer3 = new System.Windows.Threading.DispatcherTimer();
+
+            //timer2.Tick += new EventHandler(Count3);
+            //timer2.Interval = new TimeSpan(0, 0, 3);
+            //timer2.Start();
 
 
         }

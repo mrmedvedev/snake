@@ -121,16 +121,16 @@ namespace WpfApplication3
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Count c = new Count(Server_name1, Server_status1);
-            Count c2 = new Count(Server_name2, Server_status2);
-            Count c3 = new Count(Server_name3, Server_status3);
-            Count c4 = new Count(Server_name4, Server_status4);
-            Count c5 = new Count(Server_name5, Server_status5);
-            Count c6 = new Count(Server_name6, Server_status6);
-            Count c7 = new Count(Server_name7, Server_status7);
-            Count c8 = new Count(Server_name8, Server_status8);
-            Count c9 = new Count(Server_name9, Server_status9);
-            Count c10 = new Count(Server_name10, Server_status10);
+            Count c = new Count(Server_name1);
+            Count c2 = new Count(Server_name2);
+            //Count c3 = new Count(Server_name3);
+            //Count c4 = new Count(Server_name4);
+            //Count c5 = new Count(Server_name5);
+            //Count c6 = new Count(Server_name6);
+            //Count c7 = new Count(Server_name7);
+            //Count c8 = new Count(Server_name8);
+            //Count c9 = new Count(Server_name9);
+            //Count c10 = new Count(Server_name10);
 
             //System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();
 

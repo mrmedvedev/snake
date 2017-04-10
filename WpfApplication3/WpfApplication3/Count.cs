@@ -22,33 +22,44 @@ namespace WpfApplication3
     class Count
     {
         TextBox server_name;
-        TextBox server_status;
 
-        public Count(TextBox name, TextBox status)
+        Thread thread;
+        public Count(TextBox name)
         {
             server_name = name;
-            server_status = status;
+            
             System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();
 
             timer.Tick += new EventHandler(count);
-            timer.Interval = new TimeSpan(0, 0, 3);
+            timer.Interval = new TimeSpan(0, 0, 2);
             timer.Start();
         }
 
         public void count(object obj, EventArgs e)
         {
-            Job server1 = new Job();
+            Job server1 = new Job(server_name);
+            ParameterizedThreadStart req1 = new ParameterizedThreadStart(server1.req);
+            thread = new Thread(server1.req);
+            thread.IsBackground = true;
+            thread.Start(string.Format(server_name.Text));
 
-            if (server1.req(server_name.Text))
-            {
-                    server_status.Background = Brushes.Green;
-            }
 
-            else
+            //if (server1.req(server_name.Text))
+            //{
+            //    Application.Current.Dispatcher.Invoke(new Action(() =>
+            //    {
+            //        server_name.Background = Brushes.Green;
+            //    }));
+            //}
 
-            {
-                    server_status.Background = Brushes.Red;
-            }
+            //else
+
+            //{
+            //    Application.Current.Dispatcher.Invoke(new Action(() =>
+            //    {
+            //        server_name.Background = Brushes.Red;
+            //    }));
+            //}
 
             
         }

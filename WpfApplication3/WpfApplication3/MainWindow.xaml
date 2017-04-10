@@ -32,34 +32,20 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition ></ColumnDefinition>
             <ColumnDefinition ></ColumnDefinition>
-            <ColumnDefinition ></ColumnDefinition>
-            <ColumnDefinition ></ColumnDefinition>
-
-
-
-
+            
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="Server_name1" Grid.Row="0" Grid.Column="0" TextAlignment="Center" >ru907w1212</TextBox>
-        <TextBox x:Name="Server_name2" Grid.Row="1" Grid.Column="0" TextAlignment="Center" >ru907w1313</TextBox>
-        <TextBox x:Name="Server_name3" Grid.Row="2" Grid.Column="0" TextAlignment="Center" >rumows6</TextBox>
-        <TextBox x:Name="Server_name4" Grid.Row="3" Grid.Column="0" TextAlignment="Center" >rumows7</TextBox>
-        <TextBox x:Name="Server_name5" Grid.Row="4" Grid.Column="0" TextAlignment="Center" >ru907w2072</TextBox>
-        <TextBox x:Name="Server_name6" Grid.Row="5" Grid.Column="0" TextAlignment="Center" >rumows5</TextBox>
-        <TextBox x:Name="Server_name7" Grid.Row="6" Grid.Column="0" TextAlignment="Center" >ru907w30</TextBox>
-        <TextBox x:Name="Server_name8" Grid.Row="7" Grid.Column="0" TextAlignment="Center" >rumows21</TextBox>
-        <TextBox x:Name="Server_name9" Grid.Row="8" Grid.Column="0" TextAlignment="Center" >rumows20</TextBox>
-        <TextBox x:Name="Server_name10" Grid.Row="9" Grid.Column="0" TextAlignment="Center" >rumows2</TextBox>
+        <TextBox x:Name="Server_name1" Grid.Row="0" Grid.Column="0" TextAlignment="Center" FontWeight="Bold"  Background="#FF7579BB" BorderBrush="Black">yandex.ru</TextBox>
+        <TextBox x:Name="Server_name2" Grid.Row="1" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w1313</TextBox>
+        <TextBox x:Name="Server_name3" Grid.Row="2" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows6</TextBox>
+        <TextBox x:Name="Server_name4" Grid.Row="3" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows7</TextBox>
+        <TextBox x:Name="Server_name5" Grid.Row="4" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w2072</TextBox>
+        <TextBox x:Name="Server_name6" Grid.Row="5" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows5</TextBox>
+        <TextBox x:Name="Server_name7" Grid.Row="6" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w30</TextBox>
+        <TextBox x:Name="Server_name8" Grid.Row="7" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows21</TextBox>
+        <TextBox x:Name="Server_name9" Grid.Row="8" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows20</TextBox>
+        <TextBox x:Name="Server_name10" Grid.Row="9" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows2</TextBox>
 
-        <TextBox x:Name="Server_status1" Grid.Row="0" Grid.Column="1" TextAlignment="Center" Background="Blue" >Status</TextBox>
-        <TextBox x:Name="Server_status2" Grid.Row="1" Grid.Column="1" TextAlignment="Center" Background="Blue" >Status</TextBox>
-        <TextBox x:Name="Server_status3" Grid.Row="2" Grid.Column="1" TextAlignment="Center" Background="Blue" >Status</TextBox>
-        <TextBox x:Name="Server_status4" Grid.Row="3" Grid.Column="1" TextAlignment="Center" Background="Blue" >Status</TextBox>
-        <TextBox x:Name="Server_status5" Grid.Row="4" Grid.Column="1" TextAlignment="Center" Background="Blue" >Status</TextBox>
-        <TextBox x:Name="Server_status6" Grid.Row="5" Grid.Column="1" TextAlignment="Center" Background="Blue" >Status</TextBox>
-        <TextBox x:Name="Server_status7" Grid.Row="6" Grid.Column="1" TextAlignment="Center" Background="Blue" >Status</TextBox>
-        <TextBox x:Name="Server_status8" Grid.Row="7" Grid.Column="1" TextAlignment="Center" Background="Blue" >Status</TextBox>
-        <TextBox x:Name="Server_status9" Grid.Row="8" Grid.Column="1" TextAlignment="Center" Background="Blue" >Status</TextBox>
-        <TextBox x:Name="Server_status10" Grid.Row="9" Grid.Column="1" TextAlignment="Center" Background="Blue">Status</TextBox>
+        
 
     </Grid>
 </Window>

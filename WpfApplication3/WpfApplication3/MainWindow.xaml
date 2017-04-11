@@ -34,47 +34,47 @@
             <ColumnDefinition ></ColumnDefinition>
             
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="Server_name1" Grid.Row="0" Grid.Column="0" TextAlignment="Center" FontWeight="Bold"  Background="#FF7579BB" BorderBrush="Black">yandex.ru</TextBox>
-        <TextBox x:Name="Server_name2" Grid.Row="1" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w1313</TextBox>
-        <TextBox x:Name="Server_name3" Grid.Row="2" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows6</TextBox>
-        <TextBox x:Name="Server_name4" Grid.Row="3" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows7</TextBox>
-        <TextBox x:Name="Server_name5" Grid.Row="4" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w2072</TextBox>
-        <TextBox x:Name="Server_name6" Grid.Row="5" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows5</TextBox>
-        <TextBox x:Name="Server_name7" Grid.Row="6" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w30</TextBox>
-        <TextBox x:Name="Server_name8" Grid.Row="7" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows21</TextBox>
-        <TextBox x:Name="Server_name9" Grid.Row="8" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows20</TextBox>
-        <TextBox x:Name="Server_name10" Grid.Row="9" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows2</TextBox>
-        <TextBox x:Name="Server_name11" Grid.Row="10" Grid.Column="0" TextAlignment="Center" FontWeight="Bold"  Background="#FF7579BB" BorderBrush="Black">yandex.ru</TextBox>
-        <TextBox x:Name="Server_name12" Grid.Row="11" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w1313</TextBox>
-        <TextBox x:Name="Server_name13" Grid.Row="12" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows6</TextBox>
-        <TextBox x:Name="Server_name14" Grid.Row="13" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows7</TextBox>
-        <TextBox x:Name="Server_name15" Grid.Row="14" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w2072</TextBox>
-        <TextBox x:Name="Server_name16" Grid.Row="15" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows5</TextBox>
-        <TextBox x:Name="Server_name17" Grid.Row="16" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w30</TextBox>
-        <TextBox x:Name="Server_name18" Grid.Row="17" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows21</TextBox>
-        <TextBox x:Name="Server_name19" Grid.Row="18" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows20</TextBox>
-        <TextBox x:Name="Server_name20" Grid.Row="19" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows2</TextBox>
+        <TextBox x:Name="Server_name1" Grid.Row="0" Grid.Column="0" TextAlignment="Center" FontWeight="Bold"  Background="#FF7579BB" BorderBrush="Black" FontSize="30">ru907w10</TextBox>
+        <TextBox x:Name="Server_name2" Grid.Row="1" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ru907w12</TextBox>
+        <TextBox x:Name="Server_name3" Grid.Row="2" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ru907w2</TextBox>
+        <TextBox x:Name="Server_name4" Grid.Row="3" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ru907w30</TextBox>
+        <TextBox x:Name="Server_name5" Grid.Row="4" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ru907w40</TextBox>
+        <TextBox x:Name="Server_name6" Grid.Row="5" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ru907w6</TextBox>
+        <TextBox x:Name="Server_name7" Grid.Row="6" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ru908s1</TextBox>
+        <TextBox x:Name="Server_name8" Grid.Row="7" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ru908s4</TextBox>
+        <TextBox x:Name="Server_name9" Grid.Row="8" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ru908w3</TextBox>
+        <TextBox x:Name="Server_name10" Grid.Row="9" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rugojs1</TextBox>
+        <TextBox x:Name="Server_name11" Grid.Row="10" Grid.Column="0" TextAlignment="Center" FontWeight="Bold"  Background="#FF7579BB" BorderBrush="Black" FontSize="30">ruikts1</TextBox>
+        <TextBox x:Name="Server_name12" Grid.Row="11" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rukgds01</TextBox>
+        <TextBox x:Name="Server_name13" Grid.Row="12" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rukh6s1</TextBox>
+        <TextBox x:Name="Server_name14" Grid.Row="13" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rukr4s1</TextBox>
+        <TextBox x:Name="Server_name15" Grid.Row="14" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rukufs1</TextBox>
+        <TextBox x:Name="Server_name16" Grid.Row="15" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rumows5</TextBox>
+        <TextBox x:Name="Server_name17" Grid.Row="16" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ruleds2</TextBox>
+        <TextBox x:Name="Server_name18" Grid.Row="17" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ruleds3</TextBox>
+        <TextBox x:Name="Server_name19" Grid.Row="18" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ruleds4</TextBox>
+        <TextBox x:Name="Server_name20" Grid.Row="19" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ruleds5</TextBox>
 
-        <TextBox x:Name="Server_name21" Grid.Row="0" Grid.Column="1" TextAlignment="Center" FontWeight="Bold"  Background="#FF7579BB" BorderBrush="Black">yandex.ru</TextBox>
-        <TextBox x:Name="Server_name22" Grid.Row="1" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w1313</TextBox>
-        <TextBox x:Name="Server_name23" Grid.Row="2" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows6</TextBox>
-        <TextBox x:Name="Server_name24" Grid.Row="3" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows7</TextBox>
-        <TextBox x:Name="Server_name25" Grid.Row="4" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w2072</TextBox>
-        <TextBox x:Name="Server_name26" Grid.Row="5" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows5</TextBox>
-        <TextBox x:Name="Server_name27" Grid.Row="6" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w30</TextBox>
-        <TextBox x:Name="Server_name28" Grid.Row="7" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows21</TextBox>
-        <TextBox x:Name="Server_name29" Grid.Row="8" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows20</TextBox>
-        <TextBox x:Name="Server_name30" Grid.Row="9" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows2</TextBox>
-        <TextBox x:Name="Server_name31" Grid.Row="10" Grid.Column="1" TextAlignment="Center" FontWeight="Bold"  Background="#FF7579BB" BorderBrush="Black">yandex.ru</TextBox>
-        <TextBox x:Name="Server_name32" Grid.Row="11" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w1313</TextBox>
-        <TextBox x:Name="Server_name33" Grid.Row="12" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows6</TextBox>
-        <TextBox x:Name="Server_name34" Grid.Row="13" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows7</TextBox>
-        <TextBox x:Name="Server_name35" Grid.Row="14" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w2072</TextBox>
-        <TextBox x:Name="Server_name36" Grid.Row="15" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows5</TextBox>
-        <TextBox x:Name="Server_name37" Grid.Row="16" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w30</TextBox>
-        <TextBox x:Name="Server_name38" Grid.Row="17" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows21</TextBox>
-        <TextBox x:Name="Server_name39" Grid.Row="18" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows20</TextBox>
-        <TextBox x:Name="Server_name40" Grid.Row="19" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows2</TextBox>
+        <TextBox x:Name="Server_name21" Grid.Row="0" Grid.Column="1" TextAlignment="Center" FontWeight="Bold"  Background="#FF7579BB" BorderBrush="Black" FontSize="30">rumows10</TextBox>
+        <TextBox x:Name="Server_name22" Grid.Row="1" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rumows12</TextBox>
+        <TextBox x:Name="Server_name23" Grid.Row="2" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rumows2</TextBox>
+        <TextBox x:Name="Server_name24" Grid.Row="3" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rumows7</TextBox>
+        <TextBox x:Name="Server_name25" Grid.Row="4" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rumows20</TextBox>
+        <TextBox x:Name="Server_name26" Grid.Row="5" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rumows21</TextBox>
+        <TextBox x:Name="Server_name27" Grid.Row="6" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rumows3</TextBox>
+        <TextBox x:Name="Server_name28" Grid.Row="7" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rumows5</TextBox>
+        <TextBox x:Name="Server_name29" Grid.Row="8" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rumows6</TextBox>
+        <TextBox x:Name="Server_name30" Grid.Row="9" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rumows7</TextBox>
+        <TextBox x:Name="Server_name31" Grid.Row="10" Grid.Column="1" TextAlignment="Center" FontWeight="Bold"  Background="#FF7579BB" BorderBrush="Black" FontSize="30">rumows30</TextBox>
+        <TextBox x:Name="Server_name32" Grid.Row="11" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rumowu01</TextBox>
+        <TextBox x:Name="Server_name33" Grid.Row="12" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ruovbs1</TextBox>
+        <TextBox x:Name="Server_name34" Grid.Row="13" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ruro8s1</TextBox>
+        <TextBox x:Name="Server_name35" Grid.Row="14" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">rusvxs1</TextBox>
+        <TextBox x:Name="Server_name36" Grid.Row="15" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ruvvos1</TextBox>
+        <TextBox x:Name="Server_name37" Grid.Row="16" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ru907w1212</TextBox>
+        <TextBox x:Name="Server_name38" Grid.Row="17" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ru907w1313</TextBox>
+        <TextBox x:Name="Server_name39" Grid.Row="18" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ru907w0778</TextBox>
+        <TextBox x:Name="Server_name40" Grid.Row="19" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black" FontSize="30">ru907w0357temp</TextBox>
 
 
     </Grid>

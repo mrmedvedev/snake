@@ -43,25 +43,7 @@ namespace WpfApplication3
             thread.IsBackground = true;
             thread.Start(string.Format(server_name.Text));
 
-
-            //if (server1.req(server_name.Text))
-            //{
-            //    Application.Current.Dispatcher.Invoke(new Action(() =>
-            //    {
-            //        server_name.Background = Brushes.Green;
-            //    }));
-            //}
-
-            //else
-
-            //{
-            //    Application.Current.Dispatcher.Invoke(new Action(() =>
-            //    {
-            //        server_name.Background = Brushes.Red;
-            //    }));
-            //}
-
-            
+                        
         }
     }
 }

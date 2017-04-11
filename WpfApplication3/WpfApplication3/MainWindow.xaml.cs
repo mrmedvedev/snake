@@ -144,6 +144,26 @@ namespace WpfApplication3
             Count c18 = new Count(Server_name18);
             Count c19 = new Count(Server_name19);
             Count c20 = new Count(Server_name20);
+            Count c21 = new Count(Server_name21);
+            Count c22 = new Count(Server_name22);
+            Count c23 = new Count(Server_name23);
+            Count c24 = new Count(Server_name24);
+            Count c25 = new Count(Server_name25);
+            Count c26 = new Count(Server_name26);
+            Count c27 = new Count(Server_name27);
+            Count c28 = new Count(Server_name28);
+            Count c29 = new Count(Server_name29);
+            Count c30 = new Count(Server_name30);
+            Count c31 = new Count(Server_name31);
+            Count c32 = new Count(Server_name32);
+            Count c33 = new Count(Server_name33);
+            Count c34 = new Count(Server_name34);
+            Count c35 = new Count(Server_name35);
+            Count c36 = new Count(Server_name36);
+            Count c37 = new Count(Server_name37);
+            Count c38 = new Count(Server_name38);
+            Count c39 = new Count(Server_name39);
+            Count c40 = new Count(Server_name40);
 
             //System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();
 

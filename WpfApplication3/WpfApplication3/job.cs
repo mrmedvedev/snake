@@ -58,7 +58,10 @@ namespace WpfApplication3
             }
             catch (PingException)
             {
-                
+                Application.Current.Dispatcher.Invoke(new Action(() =>
+                {
+                    server_name.Background = Brushes.Orange;
+                }));
             }
                         
         }

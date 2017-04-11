@@ -121,16 +121,29 @@ namespace WpfApplication3
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+
+            
+
             Count c = new Count(Server_name1);
             Count c2 = new Count(Server_name2);
-            //Count c3 = new Count(Server_name3);
-            //Count c4 = new Count(Server_name4);
-            //Count c5 = new Count(Server_name5);
-            //Count c6 = new Count(Server_name6);
-            //Count c7 = new Count(Server_name7);
-            //Count c8 = new Count(Server_name8);
-            //Count c9 = new Count(Server_name9);
-            //Count c10 = new Count(Server_name10);
+            Count c3 = new Count(Server_name3);
+            Count c4 = new Count(Server_name4);
+            Count c5 = new Count(Server_name5);
+            Count c6 = new Count(Server_name6);
+            Count c7 = new Count(Server_name7);
+            Count c8 = new Count(Server_name8);
+            Count c9 = new Count(Server_name9);
+            Count c10 = new Count(Server_name10);
+            Count c11 = new Count(Server_name11);
+            Count c12 = new Count(Server_name12);
+            Count c13 = new Count(Server_name13);
+            Count c14 = new Count(Server_name14);
+            Count c15 = new Count(Server_name15);
+            Count c16 = new Count(Server_name16);
+            Count c17 = new Count(Server_name17);
+            Count c18 = new Count(Server_name18);
+            Count c19 = new Count(Server_name19);
+            Count c20 = new Count(Server_name20);
 
             //System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();
 
@@ -154,6 +167,11 @@ namespace WpfApplication3
         }
 
         
-}
+
+        private void Gd_TextInput(object sender, TextCompositionEventArgs e)
+        {
+            
+        }
+    }
 }
 

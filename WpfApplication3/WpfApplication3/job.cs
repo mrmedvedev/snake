@@ -58,8 +58,8 @@ namespace WpfApplication3
             }
             catch (PingException)
             {
-                MessageBox.Show("Ошибкоо");
-                    }
+                
+            }
                         
         }
         }

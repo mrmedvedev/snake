@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApplication3"
         mc:Ignorable="d"
         Title="Server's Status Tool" Height="350" Width="525" Loaded="Window_Loaded" WindowState="Maximized">
-    <Grid>
+    <Grid x:Name="Gd" TextInput="Gd_TextInput">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -44,8 +44,38 @@
         <TextBox x:Name="Server_name8" Grid.Row="7" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows21</TextBox>
         <TextBox x:Name="Server_name9" Grid.Row="8" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows20</TextBox>
         <TextBox x:Name="Server_name10" Grid.Row="9" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows2</TextBox>
+        <TextBox x:Name="Server_name11" Grid.Row="10" Grid.Column="0" TextAlignment="Center" FontWeight="Bold"  Background="#FF7579BB" BorderBrush="Black">yandex.ru</TextBox>
+        <TextBox x:Name="Server_name12" Grid.Row="11" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w1313</TextBox>
+        <TextBox x:Name="Server_name13" Grid.Row="12" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows6</TextBox>
+        <TextBox x:Name="Server_name14" Grid.Row="13" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows7</TextBox>
+        <TextBox x:Name="Server_name15" Grid.Row="14" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w2072</TextBox>
+        <TextBox x:Name="Server_name16" Grid.Row="15" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows5</TextBox>
+        <TextBox x:Name="Server_name17" Grid.Row="16" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w30</TextBox>
+        <TextBox x:Name="Server_name18" Grid.Row="17" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows21</TextBox>
+        <TextBox x:Name="Server_name19" Grid.Row="18" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows20</TextBox>
+        <TextBox x:Name="Server_name20" Grid.Row="19" Grid.Column="0" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows2</TextBox>
 
-        
+        <TextBox x:Name="Server_name21" Grid.Row="0" Grid.Column="1" TextAlignment="Center" FontWeight="Bold"  Background="#FF7579BB" BorderBrush="Black">yandex.ru</TextBox>
+        <TextBox x:Name="Server_name22" Grid.Row="1" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w1313</TextBox>
+        <TextBox x:Name="Server_name23" Grid.Row="2" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows6</TextBox>
+        <TextBox x:Name="Server_name24" Grid.Row="3" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows7</TextBox>
+        <TextBox x:Name="Server_name25" Grid.Row="4" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w2072</TextBox>
+        <TextBox x:Name="Server_name26" Grid.Row="5" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows5</TextBox>
+        <TextBox x:Name="Server_name27" Grid.Row="6" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w30</TextBox>
+        <TextBox x:Name="Server_name28" Grid.Row="7" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows21</TextBox>
+        <TextBox x:Name="Server_name29" Grid.Row="8" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows20</TextBox>
+        <TextBox x:Name="Server_name30" Grid.Row="9" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows2</TextBox>
+        <TextBox x:Name="Server_name31" Grid.Row="10" Grid.Column="1" TextAlignment="Center" FontWeight="Bold"  Background="#FF7579BB" BorderBrush="Black">yandex.ru</TextBox>
+        <TextBox x:Name="Server_name32" Grid.Row="11" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w1313</TextBox>
+        <TextBox x:Name="Server_name33" Grid.Row="12" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows6</TextBox>
+        <TextBox x:Name="Server_name34" Grid.Row="13" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows7</TextBox>
+        <TextBox x:Name="Server_name35" Grid.Row="14" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w2072</TextBox>
+        <TextBox x:Name="Server_name36" Grid.Row="15" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows5</TextBox>
+        <TextBox x:Name="Server_name37" Grid.Row="16" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">ru907w30</TextBox>
+        <TextBox x:Name="Server_name38" Grid.Row="17" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows21</TextBox>
+        <TextBox x:Name="Server_name39" Grid.Row="18" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows20</TextBox>
+        <TextBox x:Name="Server_name40" Grid.Row="19" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Background="#FF7579BB" BorderBrush="Black">rumows2</TextBox>
+
 
     </Grid>
 </Window>
